@@ -1,12 +1,7 @@
 import './App.css';
-import Project from './components/Project';
+import React from 'react';
+import PortfolioContainer from './components/PortfolioContainter';
 
-function App() {
-  return (
-    <div>
-       <Project />
-    </div>
-  );
+export default function App() {
+  return <PortfolioContainer />
 }
-
-export default App;

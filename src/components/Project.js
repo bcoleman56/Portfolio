@@ -1,26 +1,16 @@
-import Footer from './Footer';
-import Header from './Header';
-// import Navigation from './Navigation';
+import React from "react";
 
 
-export default function Project() {
+export default function Project({name, image, url, text}) {
     return (
-        <div className='bg-slate-700 h-screen v-screen'> 
-            <Header />
-
-            <div id='about-me' className='flex flex-col w-3/4 p-5 text-center'>
-                <p class='text-emerald-500 text-5xl'>Hey, I'm Brett, a web developer</p>
+        <div id='project-one' className='max-w-sm rounded-lg overflow-hidden shadow-xl h-50 w-50 hover:b-g p-5 border border-emerald-500'>
+            <div className='text-emerald-500 text-xl pb-2 font-bold'>{name}</div>
+            <a href={url} >
+                <img className='rounded border-2 border-emerald-500' src={process.env.PUBLIC_URL + `${image}`} alt={`${name} Website`} />
+            </a>
+            <div id='text-container' className='text-emerald-500 text-lg'>
+                <p>{text}</p>
             </div>
-
-            <div id='contact-me' className='flex flex-col w-3/4 p-5 flex flex-col w-3/4'>
-                <h2 class='text-3xl text-emerald-500 ml-10 mb-3'>Contact Me</h2>
-                <ul class='space-x-2 my-3 ml-10'>
-                    <li class="border border-emerald-500 rounded-lg text-emerald-500 p-2 inline-block" > Email: <a href="mailto:brettcoleman56@gmail.com">brettcoleman56@gmail.com</a></li>
-                    <li class="border border-emerald-500 rounded-lg text-emerald-500 p-2 inline-block" ><a href="https://github.com/bcoleman56/">GitHub: bcoleman56</a></li>
-                </ul>
-            </div>
-
-            <Footer />
         </div>
     )
 }
