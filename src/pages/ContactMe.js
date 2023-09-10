@@ -8,7 +8,7 @@ export default function ContactMe() {
     // }
 
     return(
-        <div id='contact' className='flex flex-col w-full p-5 text-center items-center'>
+        <div id='contact' className='flex flex-col w-full p-5 text-center items-center mb-auto'>
             <div className='w-3/4'>
                 <form className='border rounded-lg border-emerald-500 p-5 space-y-2'>
                     <label htmlFor="name" className='block  text-emerald-500 float-left'>Name:</label>

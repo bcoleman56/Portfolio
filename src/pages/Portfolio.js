@@ -24,12 +24,12 @@ const weatherProject = {
 
 export default function Portfolio() {
     return (
-        <div id='portfolio' className=' w-full p-5 flex flex-col rounded-lg mt-3 items-center'>
+        <div id='portfolio' className=' w-full p-5 flex flex-col rounded-lg mt-3 items-center mb-auto'>
             <div className='flex flex-col w-full'>
                 <h2 className='text-4xl text-emerald-500 text-center font-bold'>Projects</h2>
             </div>
             
-            <div id='projects-container' className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-rows gap-5 justify-center align-center p-5 border-emerald-500'>
+            <div id='projects-container' className='grid grid-cols-1 md:max-2xl:grid-cols-2  grid-flow-rows gap-5 justify-center align-center p-5 border-emerald-500'>
                 {/* Projects added here */}
                 <Project 
                     name={quizProject.name}

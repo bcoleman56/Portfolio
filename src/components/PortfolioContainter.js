@@ -23,7 +23,7 @@ export default function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div className=''>
+        <div className='flex flex-col h-screen'>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <Footer />
